@@ -7,8 +7,8 @@ class App extends Component {
 
   state = {
     todos: [
-      {id:1,content:'Buy some milk'},
-      {id:2 , content:'Play mario Kart'}
+      {id:1,content:'Watch some movies'},
+      {id:2 , content:'Play games on PC'}
     ]
   }
 deleteTodo = (id) =>{
@@ -32,7 +32,7 @@ addtodo = (todo) =>{
 render(){
   return (
     <div className="todoapp container">
-     <h1 className = 'center blue-text'> Todo's (Made in React.js)</h1>
+     <h1 className = 'center blue-text'> Todo's (Made by Niket Kulkarni in React)</h1>
      <Todo todos={this.state.todos} deletetodo = {this.deleteTodo}/>
     <AddTodo addtodo={this.addtodo}/>
     </div>
